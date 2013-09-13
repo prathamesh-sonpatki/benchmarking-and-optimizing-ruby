@@ -1,0 +1,33 @@
+* We <3 Ruby
+** Ruby is made for programmer's happiness
+** But Ruby is slow
+** Really? Let's measure it
+
+* Benchmark module
+* GC 
+* Optimization
+
+** Algorithms
+*** They matter!
+** Data structures
+*** Set vs Array
+*** Struct vs Hash
+** More than one way of doing things
+*** String interploation vs addition vs append
+** Memoization
+*** use of ||=
+*** use of constants
+** Database
+*** Raw SQL
+*** ActiveRecord::Transaction in Rails
+*** Reduce un-necessary access to DB
+*** find_each instead of loading all records
+** GC optimization
+
+* Remember
+   
+   "We should forget about small efficiencies, 
+   say about 97% of the time: 
+   premature optimization is the root of all evil"
+   -- Donald Knuth
+
