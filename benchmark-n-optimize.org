@@ -4,30 +4,27 @@
 ** Really? Let's measure it
 
 * Benchmark module
-* GC 
+* GC
+** mark-n-sweep, non-generational
+** ObjectSpace, GC modules
 * Optimization
-
 ** Algorithms
 *** They matter!
 ** Data structures
-*** Set vs Array
-*** Struct vs Hash
+*** Eg. Set vs Array
 ** More than one way of doing things
-*** String interploation vs addition vs append
-** Memoization
-*** use of ||=
-*** use of constants
+*** String interploation vs addition vs concatenation
 ** Database
 *** Raw SQL
 *** ActiveRecord::Transaction in Rails
 *** Reduce un-necessary access to DB
 *** find_each instead of loading all records
-** GC optimization
-
+** Rails
+*** ActiveSupport::Benchmarkable
+**** http://api.rubyonrails.org/classes/ActiveSupport/Benchmarkable.html
 * Remember
-   
-   "We should forget about small efficiencies, 
-   say about 97% of the time: 
+
+   "We should forget about small efficiencies,
+   say about 97% of the time:
    premature optimization is the root of all evil"
    -- Donald Knuth
-
