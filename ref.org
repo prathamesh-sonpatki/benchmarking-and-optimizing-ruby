@@ -1,0 +1,6 @@
+* https://github.com/tmm1
+* http://www.slideshare.net/mongosf/debugging-ruby-aman-gupta
+* https://speakerdeck.com/tmm1/debugging-ruby-performance
+* http://www.ruby-doc.org/core-2.0.0/GC.html
+* http://www.ruby-doc.org/stdlib-2.0.0/libdoc/benchmark/rdoc/Benchmark.html
+* https://github.com/prathamesh-sonpatki/benchmarking-and-optimizing-ruby
