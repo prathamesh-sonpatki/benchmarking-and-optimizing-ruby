@@ -1,5 +1,4 @@
 require 'benchmark'
-require './object_counter'
 
 def naive_fib(n)
   return n if (0..1).include? n
@@ -13,9 +12,7 @@ end
 
 input = ARGV[0].to_i
 
-# Benchmark.bmbm do |bm|
-#   bm.report { naive_fib input }
-#   bm.report { fib input }
-# end
-
-p count { fib input }
+Benchmark.bmbm do |bm|
+  bm.report("With include") { naive_fib input }
+  bm.report("Without include") { fib input }
+end
