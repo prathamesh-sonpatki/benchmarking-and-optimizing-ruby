@@ -1,17 +1,15 @@
 require './object_counter'
 require 'benchmark'
 
-include ObjectCounter
-
 content = "Hello [first_name]"
 
-gsub_count = count do
+gsub_count = ObjectCounter.count do
   100_000.times { content.gsub(/\[first_name\]/, 'Prathamesh') }
 end
 
 p gsub_count
 
-gsub_bang_count = count do
+gsub_bang_count = ObjectCounter.count do
   100_000.times { content.gsub!(/\[first_name\]/, 'Prathamesh') }
 end
 

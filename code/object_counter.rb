@@ -7,7 +7,7 @@ module ObjectCounter
     yield
     after_count  = ObjectSpace.count_objects
     after_count.each do |k,v|
-      after_count[k] = v - before_count[k]
+      after_count[k] = v.to_i - before_count[k].to_i
     end
     GC.enable
     after_count
@@ -16,7 +16,7 @@ end
 
 
 object_count = ObjectCounter.count do
-  100_000.times { "Hello" * 10_100 }
+  1000.times { Hash.new }
 end
 
 ap object_count
