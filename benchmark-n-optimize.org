@@ -4,7 +4,7 @@
 ** Really? Let's measure it
 
 * Benchmark module
-* GC
+* Garbage Collector
 ** mark-n-sweep, non-generational
 ** ObjectSpace, GC modules
 * Optimization
@@ -19,9 +19,6 @@
 *** ActiveRecord::Transaction in Rails
 *** Reduce un-necessary access to DB
 *** find_each instead of loading all records
-** Rails
-*** ActiveSupport::Benchmarkable
-**** http://api.rubyonrails.org/classes/ActiveSupport/Benchmarkable.html
 * Remember
 
    "We should forget about small efficiencies,
